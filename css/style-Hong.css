@@ -38,30 +38,15 @@ img {
     width: 100%;
 }
 
-
-
-
 /*button floating on website*/
 .fab-container {
     position: fixed;
-    bottom: 84px;
+    bottom: 20px;
     right: auto;
     cursor: pointer;
     z-index: 999;
     margin: 0 31%;
 }
-.fab-container a.join-wthree{
-    background: #e34359;
-}
-.fab-container a.join-wthree:hover{
-    background: #ad3243;
-}
-
-#popup-ads {
-    /*margin: 20% 0;*/
-}
-
-
 
 /*--Banner stats here--*/
 /*--header start here--*/
@@ -1381,12 +1366,6 @@ h3.agileits-icons-title {
         margin: 30px 0;
     }
 
-
-    /*H edit*/
-    .pricing-col {
-        margin: 30px 0;
-    }
-
     #popup-ads {
         top: 20%;
         bottom: auto;
@@ -1395,11 +1374,17 @@ h3.agileits-icons-title {
         display: none;
     }
 
+    /*.fab-container{*/
+    /*position:fixed;*/
+    /*left: 30% !important;*/
+    /*bottom: 20px !important;*/
+    /*right: 45% !important;*/
+    /*cursor:pointer;*/
+    /*z-index: 999;*/
+    /*}*/
     #toTop {
         display: none;
     }
-
-
 }
 
 @media (max-width: 767px) {
@@ -2364,22 +2349,19 @@ p.quia {
 
 .modal-header {
     font-size: 2em;
-    color: #000;
-    text-align: left;
+    color: #ffa466;
+    text-align: center;
     text-transform: uppercase;
     border: 1px solid #fff;
     font-weight: 600;
     letter-spacing: 4px;
     font-family: 'PT Serif', serif;
-    padding-bottom: 0;
 }
 
 button.close {
     font-size: 1.5em;
     color: #000;
     outline: none;
-    opacity: 1;
-    z-index: 9999;
 }
 
 .modal-body p {
@@ -2882,7 +2864,7 @@ button.close {
         line-height: 0.5em;
     }
 
-    a.join-wthree {
+    a.join-wthree hvr-wobble-horizontal {
         margin-top: 0px;
     }
 
@@ -3727,7 +3709,7 @@ button.close {
         margin-bottom: 1.8em;
     }
 
-    a.join-wthree {
+    a.join-wthree hvr-wobble-horizontal {
         font-size: 15px;
         padding: 9px 27px;
     }
@@ -3847,24 +3829,6 @@ button.close {
     margin-bottom: 30px;
 }
 
-@media (min-width: 1024px) {
-    .w3-agile-logo {
-        padding: 1em 2em;
-    }
-
-    .pricing-div h3 {
-        font-size: 20px !important;
-    }
-    /*button floating on website*/
-    .fab-container {
-        bottom: 20px;
-        right: 20px !important;
-        margin: 5% 0 !important;
-        width: 100%;
-        left: 82% !important;
-    }
-}
-
 .button-send {
     outline: none;
     padding: 10.5px 0;
@@ -3935,65 +3899,109 @@ a.social-button:hover {
     .about1 p {
         padding-right: 15px;
     }
-    /*H edit*/
-    .pricing-col {
-        margin: 30px 0;
-    }
-
-    #popup-ads {
-        top: 15%;
-        bottom: auto;
-    }
-    .d-none {
-        display: none;
-    }
 
     .fab-container {
-        bottom: 63px;
+        bottom: 20px;
         right: auto;
         margin: 0 39%;
     }
 }
 
-@media (min-width: 1440px) {
-    .panel-title > a {
-        font-size: 22px;
+    /*.fab-container{*/
+    /*left: 40% !important;*/
+    /*bottom: 20px !important;*/
+    /*}*/
+    @media (min-width: 1024px) {
+        .w3-agile-logo {
+            padding: 1em 2em;
+        }
+
+        .pricing-div h3 {
+            font-size: 20px !important;
+        }
+
+        /*.fab-container {*/
+        /*left: auto !important;*/
+        /*right: 20px !important;*/
+        /*margin: 50% 0 !important;*/
+        /*}*/
+
+        .fab-container {
+            bottom: 20px;
+            right: auto;
+            margin: 0 44%;
+        }
+    }
+    @media (min-width: 1440px) {
+        .panel-title > a {
+            font-size: 22px;
+        }
+
+        .mwho-we-textmks {
+            height: 430px;
+            overflow-y: scroll;
+        }
+        .fab-container {
+            bottom: 20px;
+            right: auto;
+            margin: 0 44%;
+        }
+    }
+    .video-responsive {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
     }
 
-    .mwho-we-textmks {
-        height: 430px;
-        overflow-y: scroll;
-    }
-    .fab-container {
-        bottom: 20px;
-        right: 20px !important;
-        margin: 5% 0 !important;
+    .video-responsive video {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        left: 87% !important;
+        height: 100%;
+        border: 0;
     }
+
+
+
+
+.close {
+    opacity: 1;
 }
 
-.video-responsive {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
+/*.modal-dialog {*/
+/*position: relative;*/
+/*width: auto;*/
+/*margin: 30% 20px;*/
+/*}*/
+.modal {
+    text-align: center;
+    padding: 0 !important;
 }
 
-.video-responsive video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.modal:before {
+    content: '';
+    display: inline-block;
     height: 100%;
-    border: 0;
+    vertical-align: middle;
+    margin-right: -4px;
 }
-@media (min-width: 1920px){
-    .fab-container {
-        /* bottom: 20px; */
-        right: 20px !important;
-        margin: 4% 0 !important;
-        width: 100%;
-        left: 89% !important;
-    }
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.modal-header {
+    height: 0;
+}
+
+.modal-header .close {
+    margin-top: -20px;
+}
+
+.fab-container a.join-wthree {
+    background: black;
 }

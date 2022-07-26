@@ -77,6 +77,7 @@ a.join-wthree.btn-booknow,
     cursor: pointer;
     z-index: 999;
     margin: 0 4%;
+    /*width: 213px;*/
 }
 .fab-container a.join-wthree{
     /*background: #e34359;*/
@@ -4017,7 +4018,7 @@ a.social-button:hover {
     }
 
     #popup-ads {
-        top: 10%;
+        top: 5%;
         bottom: auto;
     }
     .d-none {
@@ -4055,6 +4056,10 @@ a.social-button:hover {
     }
     .group-right-booking a.join-wthree{
         margin: 15px 10px;
+    }
+
+    .fab-container.group-right-booking {
+        width: 213px;
     }
 }
 

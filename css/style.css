@@ -187,7 +187,7 @@ ul.dropdown-menu {
 /*--end nav bar--*/
 .w3-agile-logo {
     padding: 0.6em 0;
-    background: rgba(52 51 51 / 75%)
+    background: rgba(52 51 51 / 90%)
 }
 
 .head-wl {
@@ -3068,6 +3068,10 @@ button.close {
         width: 323px;
         height: 323px;
     }
+    /*navvar fixed*/
+    .baner {
+        min-height:92px;
+    }
 }
 
 @media screen and (max-width: 667px) {
@@ -3143,7 +3147,7 @@ button.close {
 
     .w3-agile-logo {
         padding: 1em 0em;
-        background: #000;
+        background: rgba(52 51 51 / 90%);
     }
 
     .head-wl h1 a {

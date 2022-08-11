@@ -3143,6 +3143,7 @@ button.close {
 
     .w3-agile-logo {
         padding: 1em 0em;
+        background: #000;
     }
 
     .head-wl h1 a {
@@ -3411,16 +3412,22 @@ button.close {
     .head-wl {
         -webkit-flex-direction: column; /* Safari 6.1+ */
         flex-direction: column;
-        margin-bottom: 4em;
+        margin-bottom: 0;
     }
 
     .w3-header-top-right-text, .email-right, .agileinfo-social-grids {
         padding-top: 13px;
     }
-
+    /*navbar fixed*/
+    .header{
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+    }
+    /*navbar fixed*/
     .navbar-toggle {
-        float: none;
-        left: 44%;
+        /*float: none;*/
+        right: 0;
         margin-right: 0px;
     }
 
@@ -3433,11 +3440,11 @@ button.close {
     }
 
     .navbar-fixed-top {
-        top: 293px;
+        top: 84px;
     }
-
+    /*navbar fixed*/
     .banner-text {
-        padding: 5em 0 5em 0;
+        padding: 12em 0 5em 0;
     }
 
     .donail_right {
@@ -4061,6 +4068,10 @@ a.social-button:hover {
     .fab-container.group-right-booking {
         width: 213px;
     }
+    /*navbar fixed*/
+    .header .d-md-block{
+        display: block !important;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -4094,6 +4105,11 @@ a.social-button:hover {
     width: 100%;
     height: 100%;
     border: 0;
+}
+@media (min-width: 1024px){
+    .d-md-block{
+        display: block;
+    }
 }
 @media (min-width: 1920px){
     .fab-container {
